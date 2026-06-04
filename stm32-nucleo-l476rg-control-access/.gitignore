@@ -1,0 +1,27 @@
+# ==========================================
+# .gitignore para PlatformIO / STM32
+# ==========================================
+
+# 1. Carpetas de compilación de PlatformIO (¡MUY IMPORTANTE!)
+# Aquí se descargan los frameworks (STM32Cube) y se guardan los binarios (.elf, .bin)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# 2. Archivos de configuración de VS Code
+# PlatformIO regenera estos archivos automáticamente, no es necesario subirlos
+.vscode/
+
+# 3. Archivos de compilación sueltos (por si acaso)
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.a
+
+# 4. Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+*.bak
+*~
